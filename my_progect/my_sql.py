@@ -12,14 +12,17 @@ import pymysql.cursors
 def verification_users(cursor, id_user): #верификацию пользователя в бд
     try:
         sql_request = (f"""
-            SELECT id
-            from MY_users
-            where id_user = {id_user}""")
+            SELECT 
+                id
+            FROM 
+                MY_users
+            WHERE
+                id_user = {id_user}""")
 
         cursor.execute(sql_request)
         result = cursor.fetchall()
         if result != (): # если запрос не пуст
-            print(result[0]['id'])
+            print("Пользователь найден")
         else:
             print("такого пользователя нет")
             #нужно занести в базу нового пользователя
@@ -63,7 +66,64 @@ def create_user(cursor, update):
     except Exception as req_err:
         print("Connection refused...")
         print(str(req_err))
-    
+
+def add_daily_shopping_list(cursor, update):
+    id_user = update.effective_chat.id
+    split_message = update.message.text.split()
+    product_name = split_message[0]
+    weight_count = split_message[1]
+    period_day = split_message[2]
+    try:
+         cursor.execute(f"""
+         INSERT INTO `daily_shopping_list`
+            (`id`, `product_name`, `weight_count`, `period_day`) 
+        VALUES 
+            ('{id_user}','{product_name}','{weight_count}','{period_day}') """)
+
+    except Exception as req_err:
+        print("Connection refused...")
+        print(str(req_err))
+
+def show_daily_shopping_list(cursor, update): #показать таблицу пользователя
+    id_user = update.effective_chat.id
+    try:
+        sql_request = (f"""
+            SELECT
+                `product_name`,
+                `weight_count`,
+                `period_day`
+            FROM
+                `daily_shopping_list`
+            WHERE
+                id = {id_user}""")
+
+        cursor.execute(sql_request)
+        result = cursor.fetchall()
+        if result != (): # если запрос не пуст
+            print("Таблица найдена")
+            return result
+        else:
+            print("таблиц для такого пользователя нет")
+            result("таблиц для такого пользователя нет")
+            return result
+    except Exception as req_err:
+        print('verification_users = ' + req_err)
+
+def remove_daily_shopping_list(cursor, update):
+    split_message = update.message.text.split()
+    product_name = split_message[1]
+    print(product_name)
+    try:
+        print(product_name)
+        cursor.execute(f"""
+        DELETE FROM `daily_shopping_list` WHERE `product_name` = '{product_name}'
+        """)
+        print('Продукт успешно удален')
+    except Exception as req_err:
+        print("Connection refused...")
+        print(str(req_err))
+
+
 
 def my_sqlbase(id_user, key, update, context): #сценарии взамодействия с базой проходят проверки
                                # 1) на подключение \
@@ -83,7 +143,19 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
                     with connection.cursor() as cursor: ## как обойтись 
                         create_user(cursor, update) #создадим нового пользователя если он не найден
                         connection.commit()
-                print('done')
+                elif key == 'add_product':
+                    with connection.cursor() as cursor:
+                        add_daily_shopping_list(cursor, update)
+                        connection.commit()
+                elif key == 'show_my_table':
+                    with connection.cursor() as cursor:
+                        result = show_daily_shopping_list(cursor, update)
+                        connection.commit()
+                        return result
+                elif key == 'remove_product':
+                        result = remove_daily_shopping_list(cursor, update)
+                        connection.commit()
+                        return result
         finally:
             connection.close()
 

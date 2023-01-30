@@ -16,7 +16,7 @@ def main() -> None:
     time_reg = datetime.datetime.today().strftime("%Y.%m.%d")
     print(time_reg)
     updis.add_handler(CommandHandler('add', add_table))
-
+    updis.add_handler(CommandHandler('show', select_mysql))
 
     updis.add_handler(CommandHandler('start', start))
 
