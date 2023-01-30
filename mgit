@@ -1,8 +1,0 @@
-#!/bin/bash
-# ochmod +x ./myscript
-
-git add .
-git commit -m 'test'
-git push origin develop
-
-echo "donedanon"
