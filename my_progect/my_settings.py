@@ -8,7 +8,7 @@
 
 telegram_token = "5718308924:AAGXgGQXUh46_z0QNHJzfO6VVQ3YqOHPBKY"
 
-
+#sdfsd
 
 my_user='root'
 my_password='root'

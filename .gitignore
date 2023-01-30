@@ -1,3 +1,6 @@
-__pycache__
+__pycache__/
+errors.log
+
+my_progect/my_settings.py
 mgit
-my_settings.py
+.gitignore

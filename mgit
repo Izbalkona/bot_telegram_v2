@@ -2,7 +2,7 @@
 # ochmod +x ./myscript
 
 git add .
-git commit -m 'registration_done'
+git commit -m 'test'
 git push origin develop
 
 echo "donedanon"
