@@ -123,6 +123,16 @@ def remove_daily_shopping_list(cursor, update):
         print("Connection refused...")
         print(str(req_err))
 
+def clear_daily_shopping_list(cursor, update):
+    id_user = update.effective_chat.id
+    try:
+        cursor.execute(f"""
+        DELETE FROM `daily_shopping_list` WHERE id = '{id_user}'
+        """)
+        print('Таблица успешно удалена')
+    except Exception as req_err:
+        print("Connection refused...")
+        print(str(req_err))
 
 
 def my_sqlbase(id_user, key, update, context): #сценарии взамодействия с базой проходят проверки
@@ -143,19 +153,21 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
                     with connection.cursor() as cursor: ## как обойтись 
                         create_user(cursor, update) #создадим нового пользователя если он не найден
                         connection.commit()
-                elif key == 'add_product':
-                    with connection.cursor() as cursor:
-                        add_daily_shopping_list(cursor, update)
-                        connection.commit()
+                if key == 'add_product':
+                    add_daily_shopping_list(cursor, update)
+                    connection.commit()
                 elif key == 'show_my_table':
-                    with connection.cursor() as cursor:
-                        result = show_daily_shopping_list(cursor, update)
-                        connection.commit()
-                        return result
+                    result = show_daily_shopping_list(cursor, update)
+                    connection.commit()
+                    return result
                 elif key == 'remove_product':
-                        result = remove_daily_shopping_list(cursor, update)
-                        connection.commit()
-                        return result
+                    result = remove_daily_shopping_list(cursor, update)
+                    connection.commit()
+                    return result
+                elif key == 'clear':
+                    result = clear_daily_shopping_list(cursor, update)
+                    connection.commit()
+                    return result
         finally:
             connection.close()
 

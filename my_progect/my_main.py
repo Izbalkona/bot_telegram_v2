@@ -13,15 +13,13 @@ def main() -> None:
     updater = Updater(telegram_token) #connect Telegam with token key
     updis = updater.dispatcher #rename for usability
 
-    time_reg = datetime.datetime.today().strftime("%Y.%m.%d")
-    print(time_reg)
-    updis.add_handler(CommandHandler('add', add_table))
-    updis.add_handler(CommandHandler('show', select_mysql))
 
-    updis.add_handler(CommandHandler('start', start))
+    updis.add_handler(CommandHandler('show', select_mysql)) #показать список покупок, количество, период
 
-    updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))# должно быть последним
+    updis.add_handler(CommandHandler('start', start)) #покажет список команд
+    updis.add_handler(CommandHandler('clear', clear)) #clear полностью очистит вашу таблицу
 
+    updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))# должно быть последним обрабатывает весь текст
 
     updater.start_polling() # цикл
     print('Started')
