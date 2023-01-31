@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-
 import datetime
 
 from my_settings import *
@@ -30,7 +26,7 @@ def verification_users(cursor, id_user): #верификацию пользов�
     except Exception as req_err:
         print('verification_users = ' + req_err)
 
-def create_user(cursor, update):
+def create_user(cursor, update): #создаем нового пользователя
     id_user = update.effective_chat.id
     user_name = update.message.chat.username
     first_name = update.message.chat.first_name
@@ -67,7 +63,7 @@ def create_user(cursor, update):
         print("Connection refused...")
         print(str(req_err))
 
-def add_daily_shopping_list(cursor, update):
+def add_daily_shopping_list(cursor, update): #добавить новый продукт в свой список
     id_user = update.effective_chat.id
     split_message = update.message.text.split()
     product_name = split_message[0]
@@ -109,7 +105,7 @@ def show_daily_shopping_list(cursor, update, id_user): #показать таб�
     except Exception as req_err:
         print('verification_users = ' + req_err)
 
-def remove_daily_shopping_list(cursor, update):
+def remove_daily_shopping_list(cursor, update): #удалить продукт из своего списка
     split_message = update.message.text.split()
     product_name = split_message[1]
     print(product_name)
@@ -123,7 +119,7 @@ def remove_daily_shopping_list(cursor, update):
         print("Connection refused...")
         print(str(req_err))
 
-def clear_daily_shopping_list(cursor, update):
+def clear_daily_shopping_list(cursor, update): #полностью очитстить свой список
     id_user = update.effective_chat.id
     try:
         cursor.execute(f"""
@@ -147,8 +143,7 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
         print('connect_succ')
         try:
             with connection.cursor() as cursor:
-                print('3fsdfs')
-                if verification_users(cursor, id_user) == 'create_user': #верификациz пользователя в бд
+                if verification_users(cursor, id_user) == 'create_user': #верификация пользователя в бд
                     cursor.close()
                     with connection.cursor() as cursor: ## как обойтись 
                         create_user(cursor, update) #создадим нового пользователя если он не найден
@@ -175,5 +170,3 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
     except Exception as ex:
         print("Connection refused...")
         print('my_sqlbase = '+str(ex))
-
-#https://habr.com/ru/post/321510/ понятная статья по sql

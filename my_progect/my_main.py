@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-
-
 from my_settings import *
 from my_handlers import *
 

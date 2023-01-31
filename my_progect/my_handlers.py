@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
 from my_sql import *
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Bot
@@ -8,10 +6,10 @@ from telegram.ext import Updater, CallbackContext, CommandHandler, Filters, Mess
 from my_settings import *
 
 
+button_1 = 'Мой список'
+markup = ReplyKeyboardMarkup([[button_1]], resize_keyboard = True) #задаем кнопки дя чата
 
-markuup = ReplyKeyboardMarkup([['Мой список']], input_field_placeholder = 'dwad', resize_keyboard = True)
-
-def start(update, context):
+def start(update, context): # вызов команды /start /stop описание возможностей программы
     id_users = update.effective_chat.id
     context.bot.send_message( id_users, text="""1. /day - укажите в какой день вы ходите за покупками\n
 2. /show - показать список покупок, количество, период\n
@@ -24,7 +22,7 @@ def start(update, context):
     - картошка\n
 5. /clear полностью очистит вашу таблицу
 6. есть возможность задать один из списков покупок на выбор
-    /show_menu """ , parse_mode='html', reply_markup=markuup)
+    /show_menu """ , parse_mode='html', reply_markup=markup)
 
 def show_menu(update, context):
     id_users = update.effective_chat.id
@@ -41,10 +39,10 @@ def clear(update, context): #удалить список покупок
     key = 'clear'
     my_sqlbase(id_user, key, update, context) #key это ключ к сценарию
 
-def show_sport(update, context):
+def show_sport(update, context): # показать спортивное питание, данные о нем хранятся в общей базе
     id_user = update.effective_chat.id
     menu = update.message.text
-    dict_menu = {'/show_sport':'10'}
+    dict_menu = {'/show_sport':'10'} # id питания в базе
     id_menu = dict_menu[menu]
     key = 'show_my_table'
     print('id_menu =' + id_menu)
@@ -101,13 +99,3 @@ def echo(update, context) -> None: #регистрация любого сооб
         url = f'https://yandex.ru/images/search?text=%D1%8F%20%D0%BD%D0%B5%20%D0%BF%D0%BE%D0%BD%D1%8F%D0%BB%20%D1%82%D0%B5%D0%B1%D1%8F&from=tabbar&pos=0&img_url=http%3A%2F%2Frisovach.ru%2Fupload%2F2014%2F03%2Fmem%2Fmne-kazhetsya-ili-frai-futurama_46256504_orig_.jpg&rpt=simage&lr=171920'
         context.bot.send_photo( id_user, url )
 
-    
-    
-     
-
-
-
-
-    #print(f'id = {update.effective_chat.id}')
-
-#start_handler = CommandHandler('start', start)

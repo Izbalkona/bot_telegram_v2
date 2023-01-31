@@ -884,3 +884,19 @@ TypeError: 'NoneType' object is not iterable
 2023-01-31 12:29:45,180 INFO Received signal 2 (SIGINT), stopping...
 2023-01-31 12:29:45,180 INFO Scheduler has been shut down
 2023-01-31 12:29:45,427 WARNING Exiting immediately!
+2023-01-31 13:42:58,076 INFO Scheduler started
+2023-01-31 13:43:12,362 INFO запрос пользователя 642411623 : цй
+2023-01-31 13:43:17,353 INFO запрос пользователя 642411623 : qw 2 3
+2023-01-31 13:43:43,467 INFO Received signal 2 (SIGINT), stopping...
+2023-01-31 13:43:43,467 INFO Scheduler has been shut down
+2023-01-31 13:43:43,746 WARNING Exiting immediately!
+2023-01-31 13:43:46,041 INFO Scheduler started
+2023-01-31 13:43:50,604 INFO запрос пользователя 642411623 : qw 2 3
+2023-01-31 13:56:54,781 INFO Received signal 2 (SIGINT), stopping...
+2023-01-31 13:56:54,781 INFO Scheduler has been shut down
+2023-01-31 13:56:55,045 WARNING Exiting immediately!
+2023-01-31 13:56:57,471 INFO Scheduler started
+2023-01-31 13:57:03,219 INFO запрос пользователя 642411623 : цук 3 4
+2023-01-31 13:57:12,333 INFO Received signal 2 (SIGINT), stopping...
+2023-01-31 13:57:12,333 INFO Scheduler has been shut down
+2023-01-31 13:57:12,611 WARNING Exiting immediately!
