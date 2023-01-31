@@ -1,0 +1,886 @@
+2023-01-30 16:25:41,940 INFO Scheduler started
+2023-01-30 16:26:12,355 INFO нераспознанный текст hj
+2023-01-30 16:27:14,534 INFO нераспознанный текст rfhnjirf f h
+2023-01-30 16:33:17,773 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 16:33:17,773 INFO Scheduler has been shut down
+2023-01-30 16:33:18,100 WARNING Exiting immediately!
+2023-01-30 16:39:53,252 INFO Scheduler started
+2023-01-30 16:39:57,687 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:39:57,687 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:02,908 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:02,908 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:08,641 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:08,641 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:15,603 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:15,604 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:24,409 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:24,409 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:26,301 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 16:40:26,301 INFO Scheduler has been shut down
+2023-01-30 16:40:26,580 WARNING Exiting immediately!
+2023-01-30 16:40:41,478 INFO Scheduler started
+2023-01-30 16:40:45,875 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:45,875 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:47,374 INFO запрос пользователя 642411623 : cr
+2023-01-30 16:40:51,033 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:51,033 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:56,169 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:40:56,171 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 651, in _network_loop_retry
+    if not action_cb():
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/updater.py", line 602, in polling_action_cb
+    updates = self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    updates = super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 3140, in get_updates
+    self._post(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:41:00,467 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 16:41:00,467 INFO Scheduler has been shut down
+2023-01-30 16:41:02,296 ERROR Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2023-01-30 16:41:12,922 INFO Scheduler started
+2023-01-30 16:41:15,274 INFO запрос пользователя 642411623 : w
+2023-01-30 16:41:39,089 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 16:41:39,089 INFO Scheduler has been shut down
+2023-01-30 16:41:39,345 WARNING Exiting immediately!
+2023-01-30 16:41:56,994 INFO Scheduler started
+2023-01-30 16:50:01,830 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 16:50:01,831 INFO Scheduler has been shut down
+2023-01-30 16:50:02,189 WARNING Exiting immediately!
+2023-01-30 17:00:24,935 INFO Scheduler started
+2023-01-30 17:00:35,885 INFO запрос пользователя 642411623 : свекла 5кг 4
+2023-01-30 17:00:43,494 INFO запрос пользователя 642411623 : /ырщц
+2023-01-30 17:02:36,370 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:02:36,372 INFO Scheduler has been shut down
+2023-01-30 17:02:36,610 WARNING Exiting immediately!
+2023-01-30 17:02:38,624 INFO Scheduler started
+2023-01-30 17:02:46,831 INFO запрос пользователя 642411623 : cd 4 5
+2023-01-30 17:03:01,297 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:03:01,297 INFO Scheduler has been shut down
+2023-01-30 17:03:01,535 WARNING Exiting immediately!
+2023-01-30 17:03:15,361 INFO Scheduler started
+2023-01-30 17:03:21,250 INFO запрос пользователя 642411623 : we 3 4
+2023-01-30 17:04:15,966 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:04:15,966 INFO Scheduler has been shut down
+2023-01-30 17:04:16,229 WARNING Exiting immediately!
+2023-01-30 17:04:31,531 INFO Scheduler started
+2023-01-30 17:04:35,839 INFO запрос пользователя 642411623 : we 3 4
+2023-01-30 17:04:50,360 INFO запрос пользователя 642411623 : we 3 4
+2023-01-30 17:09:52,896 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:09:52,896 INFO Scheduler has been shut down
+2023-01-30 17:09:53,175 WARNING Exiting immediately!
+2023-01-30 17:10:24,950 INFO Scheduler started
+2023-01-30 17:10:32,101 INFO запрос пользователя 642411623 : 23 3 4
+2023-01-30 17:10:36,334 INFO запрос пользователя 642411623 : /ырщц
+2023-01-30 17:32:22,249 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:32:22,249 INFO Scheduler has been shut down
+2023-01-30 17:32:22,608 WARNING Exiting immediately!
+2023-01-30 17:33:04,025 INFO Scheduler started
+2023-01-30 17:33:04,878 INFO запрос пользователя 642411623 : /сlear
+2023-01-30 17:33:17,344 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 36, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 17:33:30,498 INFO запрос пользователя 642411623 : rf 3 4
+2023-01-30 17:33:40,608 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:33:40,609 INFO Scheduler has been shut down
+2023-01-30 17:33:40,912 WARNING Exiting immediately!
+2023-01-30 17:48:44,804 INFO Scheduler started
+2023-01-30 17:48:52,402 INFO запрос пользователя 642411623 : q ?
+2023-01-30 17:50:19,307 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:50:19,307 INFO Scheduler has been shut down
+2023-01-30 17:50:19,482 WARNING Exiting immediately!
+2023-01-30 17:50:21,258 INFO Scheduler started
+2023-01-30 17:50:23,812 INFO запрос пользователя 642411623 : ?
+2023-01-30 17:54:48,267 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:54:48,267 INFO Scheduler has been shut down
+2023-01-30 17:54:48,523 WARNING Exiting immediately!
+2023-01-30 17:54:56,251 INFO Scheduler started
+2023-01-30 17:55:01,188 INFO запрос пользователя 642411623 : ?
+2023-01-30 17:55:03,632 INFO запрос пользователя 642411623 : dw
+2023-01-30 17:55:03,812 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 75, in echo
+    context.bot.send_photo( id_user, url )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 753, in send_photo
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+             ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Invalid file http url specified: unsupported url protocol
+2023-01-30 17:55:23,921 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:55:23,922 INFO Scheduler has been shut down
+2023-01-30 17:55:24,089 WARNING Exiting immediately!
+2023-01-30 17:55:26,704 INFO Scheduler started
+2023-01-30 17:55:30,073 INFO запрос пользователя 642411623 : wd
+2023-01-30 17:55:30,394 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 75, in echo
+    context.bot.send_photo( id_user, url )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 753, in send_photo
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+             ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Invalid file http url specified: unsupported url protocol
+2023-01-30 17:55:51,154 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:55:51,154 INFO Scheduler has been shut down
+2023-01-30 17:55:51,337 WARNING Exiting immediately!
+2023-01-30 17:55:52,881 INFO Scheduler started
+2023-01-30 17:55:54,900 INFO запрос пользователя 642411623 : dw
+2023-01-30 17:55:55,079 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 75, in echo
+    context.bot.send_photo( id_user, url )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 753, in send_photo
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+             ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Invalid file http url specified: unsupported url protocol
+2023-01-30 17:57:15,951 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:57:15,951 INFO Scheduler has been shut down
+2023-01-30 17:57:16,174 WARNING Exiting immediately!
+2023-01-30 17:57:18,356 INFO Scheduler started
+2023-01-30 17:57:21,664 INFO запрос пользователя 642411623 : dw
+2023-01-30 17:57:37,758 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:57:37,758 INFO Scheduler has been shut down
+2023-01-30 17:57:37,917 WARNING Exiting immediately!
+2023-01-30 17:57:40,142 INFO Scheduler started
+2023-01-30 17:57:55,494 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 17:57:55,494 INFO Scheduler has been shut down
+2023-01-30 17:57:55,685 WARNING Exiting immediately!
+2023-01-30 17:57:57,243 INFO Scheduler started
+2023-01-30 17:58:01,115 INFO запрос пользователя 642411623 : dwdw
+2023-01-30 17:58:05,335 INFO запрос пользователя 642411623 : ?
+2023-01-30 18:01:22,967 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:01:22,968 INFO Scheduler has been shut down
+2023-01-30 18:01:23,183 WARNING Exiting immediately!
+2023-01-30 18:07:29,238 INFO Scheduler started
+2023-01-30 18:07:29,582 INFO запрос пользователя 642411623 : к 4 4
+2023-01-30 18:14:34,840 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:14:34,841 INFO Scheduler has been shut down
+2023-01-30 18:14:35,072 WARNING Exiting immediately!
+2023-01-30 18:14:37,130 INFO Scheduler started
+2023-01-30 18:18:05,602 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:18:05,602 INFO Scheduler has been shut down
+2023-01-30 18:18:05,865 WARNING Exiting immediately!
+2023-01-30 18:18:12,232 INFO Scheduler started
+2023-01-30 18:18:12,531 INFO запрос пользователя 642411623 : dw
+2023-01-30 18:18:23,910 INFO запрос пользователя 642411623 : dw
+2023-01-30 18:18:48,396 INFO запрос пользователя 642411623 : /adress
+2023-01-30 18:22:51,954 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:22:51,954 INFO Scheduler has been shut down
+2023-01-30 18:22:52,248 WARNING Exiting immediately!
+2023-01-30 18:22:54,848 INFO Scheduler started
+2023-01-30 18:23:06,906 INFO запрос пользователя 642411623 : cd
+2023-01-30 18:23:32,247 INFO запрос пользователя 642411623 : /adress
+2023-01-30 18:23:44,495 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_main.py", line 15, in address
+    context.bot.send_message(text = 'Адрес: Китай, Гималаи, хребет Махалангур-Химал, вершина Эверест, д. 1', reply_markup=markuup)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: Bot.send_message() missing 1 required positional argument: 'chat_id'
+2023-01-30 18:24:39,622 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:24:39,622 INFO Scheduler has been shut down
+2023-01-30 18:24:39,838 WARNING Exiting immediately!
+2023-01-30 18:24:43,354 INFO Scheduler started
+2023-01-30 18:24:48,628 INFO запрос пользователя 642411623 : address
+2023-01-30 18:25:03,136 INFO запрос пользователя 642411623 : address
+2023-01-30 18:25:24,262 INFO запрос пользователя 642411623 : address
+2023-01-30 18:25:26,108 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:25:26,109 INFO Scheduler has been shut down
+2023-01-30 18:25:26,324 WARNING Exiting immediately!
+2023-01-30 18:25:32,346 INFO Scheduler started
+2023-01-30 18:25:34,185 INFO запрос пользователя 642411623 : address
+2023-01-30 18:25:36,112 INFO запрос пользователя 642411623 : address
+2023-01-30 18:28:41,037 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:28:41,037 INFO Scheduler has been shut down
+2023-01-30 18:28:41,286 WARNING Exiting immediately!
+2023-01-30 18:28:43,922 INFO Scheduler started
+2023-01-30 18:44:28,851 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:44:28,852 INFO Scheduler has been shut down
+2023-01-30 18:44:29,066 WARNING Exiting immediately!
+2023-01-30 18:44:30,936 INFO Scheduler started
+2023-01-30 18:45:32,561 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:45:32,562 INFO Scheduler has been shut down
+2023-01-30 18:45:32,833 WARNING Exiting immediately!
+2023-01-30 18:45:34,479 INFO Scheduler started
+2023-01-30 18:47:23,621 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:47:23,621 INFO Scheduler has been shut down
+2023-01-30 18:47:23,854 WARNING Exiting immediately!
+2023-01-30 18:47:29,204 INFO Scheduler started
+2023-01-30 18:51:11,247 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:51:11,248 INFO Scheduler has been shut down
+2023-01-30 18:51:11,527 WARNING Exiting immediately!
+2023-01-30 18:51:13,709 INFO Scheduler started
+2023-01-30 18:51:23,265 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 26, in start
+    5. /clear полностью очистит вашу таблицу""" , parse_mode='html', reply_markup=markuup("dvssd"))
+                                                                                  ^^^^^^^^^^^^^^^^
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+2023-01-30 18:51:25,258 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 26, in start
+    5. /clear полностью очистит вашу таблицу""" , parse_mode='html', reply_markup=markuup("dvssd"))
+                                                                                  ^^^^^^^^^^^^^^^^
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+2023-01-30 18:51:41,694 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 18:51:41,694 INFO Scheduler has been shut down
+2023-01-30 18:51:41,926 WARNING Exiting immediately!
+2023-01-30 18:51:44,259 INFO Scheduler started
+2023-01-30 19:01:51,152 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:01:51,152 INFO Scheduler has been shut down
+2023-01-30 19:01:51,448 WARNING Exiting immediately!
+2023-01-30 19:01:57,391 INFO Scheduler started
+2023-01-30 19:02:04,416 INFO запрос пользователя 642411623 : Мой список
+2023-01-30 19:03:44,379 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:03:44,379 INFO Scheduler has been shut down
+2023-01-30 19:03:44,700 WARNING Exiting immediately!
+2023-01-30 19:03:49,123 INFO Scheduler started
+2023-01-30 19:09:59,646 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:09:59,646 INFO Scheduler has been shut down
+2023-01-30 19:09:59,901 WARNING Exiting immediately!
+2023-01-30 19:10:01,486 INFO Scheduler started
+2023-01-30 19:10:34,069 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:10:34,069 INFO Scheduler has been shut down
+2023-01-30 19:10:34,468 WARNING Exiting immediately!
+2023-01-30 19:10:36,171 INFO Scheduler started
+2023-01-30 19:11:52,217 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:11:52,218 INFO Scheduler has been shut down
+2023-01-30 19:11:52,455 WARNING Exiting immediately!
+2023-01-30 19:11:54,518 INFO Scheduler started
+2023-01-30 19:11:56,562 INFO запрос пользователя 642411623 : Мой список
+2023-01-30 19:48:26,616 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 19:48:26,617 INFO Scheduler has been shut down
+2023-01-30 19:48:26,967 WARNING Exiting immediately!
+2023-01-30 19:49:00,731 INFO Scheduler started
+2023-01-30 20:31:26,141 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 20:31:26,141 INFO Scheduler has been shut down
+2023-01-30 20:31:26,428 WARNING Exiting immediately!
+2023-01-30 20:31:28,601 INFO Scheduler started
+2023-01-30 20:32:55,529 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 20:32:55,529 INFO Scheduler has been shut down
+2023-01-30 20:32:55,961 WARNING Exiting immediately!
+2023-01-30 20:33:06,749 INFO Scheduler started
+2023-01-30 20:58:55,281 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 20:58:55,281 INFO Scheduler has been shut down
+2023-01-30 20:58:55,592 WARNING Exiting immediately!
+2023-01-30 20:59:04,129 INFO Scheduler started
+2023-01-30 21:06:18,461 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:06:18,461 INFO Scheduler has been shut down
+2023-01-30 21:06:18,876 WARNING Exiting immediately!
+2023-01-30 21:06:23,213 INFO Scheduler started
+2023-01-30 21:06:29,563 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:08:13,702 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:08:18,337 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:08:18,337 INFO Scheduler has been shut down
+2023-01-30 21:08:18,631 WARNING Exiting immediately!
+2023-01-30 21:08:20,918 INFO Scheduler started
+2023-01-30 21:08:25,388 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:08:30,433 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:08:30,433 INFO Scheduler has been shut down
+2023-01-30 21:08:30,671 WARNING Exiting immediately!
+2023-01-30 21:08:34,234 INFO Scheduler started
+2023-01-30 21:08:36,000 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:08:58,568 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:08:58,568 INFO Scheduler has been shut down
+2023-01-30 21:08:58,767 WARNING Exiting immediately!
+2023-01-30 21:09:01,199 INFO Scheduler started
+2023-01-30 21:09:02,641 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:09:27,134 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:09:27,134 INFO Scheduler has been shut down
+2023-01-30 21:09:27,398 WARNING Exiting immediately!
+2023-01-30 21:09:28,794 INFO Scheduler started
+2023-01-30 21:09:30,296 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:10:36,972 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:10:36,973 INFO Scheduler has been shut down
+2023-01-30 21:10:37,284 WARNING Exiting immediately!
+2023-01-30 21:10:39,235 INFO Scheduler started
+2023-01-30 21:10:43,327 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    print('id_menu =' + id_menu)
+          ~~~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+2023-01-30 21:10:53,792 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    print('id_menu =' + id_menu)
+          ~~~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+2023-01-30 21:10:55,594 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:10:55,595 INFO Scheduler has been shut down
+2023-01-30 21:10:55,794 WARNING Exiting immediately!
+2023-01-30 21:10:58,431 INFO Scheduler started
+2023-01-30 21:11:05,039 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 50, in show_sport
+    print('id_menu =' + id_menu)
+          ~~~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+2023-01-30 21:11:34,107 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:11:34,107 INFO Scheduler has been shut down
+2023-01-30 21:11:34,298 WARNING Exiting immediately!
+2023-01-30 21:11:36,121 INFO Scheduler started
+2023-01-30 21:11:38,454 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:13:02,767 INFO Received signal 2 (SIGINT), stopping...
+2023-01-30 21:13:02,767 INFO Scheduler has been shut down
+2023-01-30 21:13:02,999 WARNING Exiting immediately!
+2023-01-30 21:13:05,592 INFO Scheduler started
+2023-01-30 21:13:07,744 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:13:43,900 INFO запрос пользователя 642411623 : Мой список
+2023-01-30 21:50:18,545 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 16, in start
+    context.bot.send_message( id_users, text="""1. /day - укажите в какой день вы ходите за покупками\n
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 534, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+             ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-01-30 21:51:31,423 INFO запрос пользователя 123175459 : /show_diet
+2023-01-30 21:51:35,520 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:51:41,459 INFO запрос пользователя 123175459 : /day
+2023-01-30 21:51:44,330 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 62, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 21:51:47,501 INFO запрос пользователя 123175459 : Мой список
+2023-01-30 21:51:47,504 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 76, in echo
+    select_mysql(update, context)
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 62, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 21:51:49,446 INFO запрос пользователя 123175459 : Мой список
+2023-01-30 21:51:49,450 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 76, in echo
+    select_mysql(update, context)
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 62, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 21:51:50,061 INFO запрос пользователя 123175459 : Мой список
+2023-01-30 21:51:50,064 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 76, in echo
+    select_mysql(update, context)
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 62, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 21:52:16,685 INFO запрос пользователя 123175459 : Пощел нахуй | пидор | г
+2023-01-30 21:52:26,516 INFO запрос пользователя 123175459 : Оао | оала | клал
+2023-01-30 21:52:38,644 INFO запрос пользователя 123175459 : Картоха | 1 | 1
+2023-01-30 21:52:57,849 INFO запрос пользователя 123175459 : Карт 5 6
+2023-01-30 21:53:09,931 INFO запрос пользователя 123175459 : Картоха иди нах
+2023-01-30 21:54:57,630 INFO запрос пользователя 123175459 : ‘ or 1=1 SELECT *
+2023-01-30 21:54:57,811 INFO запрос пользователя 123175459 : Мой список
+2023-01-30 21:54:57,916 INFO запрос пользователя 123175459 : Мой список
+2023-01-30 21:54:58,020 INFO запрос пользователя 123175459 : /day
+2023-01-30 21:54:58,213 INFO запрос пользователя 123175459 : Картоха 6 6
+2023-01-30 21:54:58,309 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 51, in show_sport
+    result = select_mysql(id_menu, key, update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_mysql() takes 2 positional arguments but 4 were given
+2023-01-30 21:55:22,748 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram_v2/my_progect/my_handlers.py", line 62, in select_mysql
+    for product in result:
+TypeError: 'NoneType' object is not iterable
+2023-01-30 21:55:30,937 INFO запрос пользователя 123175459 : Картоха 7 7
+2023-01-30 21:56:08,518 INFO запрос пользователя 123175459 : OR 1=1 8
+2023-01-30 21:57:16,307 INFO запрос пользователя 123175459 : 105; DROP TABLE daily_shopping_list
+2023-01-31 12:29:36,907 INFO запрос пользователя 642411623 : d
+2023-01-31 12:29:45,180 INFO Received signal 2 (SIGINT), stopping...
+2023-01-31 12:29:45,180 INFO Scheduler has been shut down
+2023-01-31 12:29:45,427 WARNING Exiting immediately!
