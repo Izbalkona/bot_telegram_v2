@@ -84,7 +84,7 @@ def add_daily_shopping_list(cursor, update):
         print("Connection refused...")
         print(str(req_err))
 
-def show_daily_shopping_list(cursor, update): #показать таблицу пользователя
+def show_daily_shopping_list(cursor, update, id_user): #показать таблицу пользователя
     id_user = update.effective_chat.id
     try:
         sql_request = (f"""
@@ -134,7 +134,6 @@ def clear_daily_shopping_list(cursor, update):
         print("Connection refused...")
         print(str(req_err))
 
-
 def my_sqlbase(id_user, key, update, context): #сценарии взамодействия с базой проходят проверки
                                # 1) на подключение \
                                # 2) верификацию пользователя в бд)
@@ -148,6 +147,7 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
         print('connect_succ')
         try:
             with connection.cursor() as cursor:
+                print('3fsdfs')
                 if verification_users(cursor, id_user) == 'create_user': #верификациz пользователя в бд
                     cursor.close()
                     with connection.cursor() as cursor: ## как обойтись 
@@ -157,7 +157,8 @@ def my_sqlbase(id_user, key, update, context): #сценарии взамоде�
                     add_daily_shopping_list(cursor, update)
                     connection.commit()
                 elif key == 'show_my_table':
-                    result = show_daily_shopping_list(cursor, update)
+                    print('2sdfs')
+                    result = show_daily_shopping_list(cursor, update, id_user)
                     connection.commit()
                     return result
                 elif key == 'remove_product':
