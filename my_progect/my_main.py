@@ -13,7 +13,7 @@ from telegram.ext import Updater, CallbackContext, CommandHandler, Filters, Mess
 
 
 def main() -> None:
-    updater = Updater(telegram_token) #connect Telegam with token key
+    updater = Updater(telegram_token) #connect Telegam with token key-
     updis = updater.dispatcher #rename for usability
 
     print(datetime.datetime.today().weekday())

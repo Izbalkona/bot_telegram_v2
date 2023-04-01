@@ -36,7 +36,7 @@ def show_menu(update, context):
 
 
 
-def clear(update, context): #удалить список покупок
+def clear(update, context): #удалить список покупок-
     id_user = update.effective_chat.id
     key = 'clear'
     my_sqlbase(id_user, key, update, context) #key это ключ к сценарию

@@ -16,12 +16,12 @@ def verification_users(cursor, id_user): #верификацию пользов�
                 id
             FROM 
                 MY_users
-            WHERE
+            WHERE =
                 id_user = {id_user}""")
 
         cursor.execute(sql_request)
         result = cursor.fetchall()
-        if result != (): # если запрос не пуст
+        if result != (): # если запрос не пуст-
             print("Пользователь найден")
         else:
             print("такого пользователя нет")
